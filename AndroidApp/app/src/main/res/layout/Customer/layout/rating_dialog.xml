@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/backGround">
+
+        <TextView
+            android:layout_width="246dp"
+            android:layout_height="55dp"
+            android:layout_above="@+id/smile_rating"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="29dp"
+            android:gravity="center"
+            android:text="Rate Us"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="italic" />
+
+        <com.hsalf.smilerating.SmileRating
+            android:id="@+id/smile_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+
+        <EditText
+            android:id="@+id/feedBack"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="105dp"
+            android:layout_marginBottom="94dp"
+            android:hint="Your feedBack"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="103dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/log_btn"
+            android:gravity="center"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

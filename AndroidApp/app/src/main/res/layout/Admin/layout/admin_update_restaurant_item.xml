@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/backGround">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/addRestName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Restaurant-Name: "
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/addRestName_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="value"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/addRestLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Restaurant-Location: "
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/addRestLoc_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="value"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/addRestPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Phone-Number: "
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/addRestPhone_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="value"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/addRestOpenAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Opne-At: "
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/addRestOpenAt_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="value"
+                    android:inputType="date|datetime|number"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/addRestCloseAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Close-At: "
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/addRestCloseAt_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="value"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/addResStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Restaurant-Name: "
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+                <CheckBox
+                    android:id="@+id/addRestStatus_Value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/addRestMangerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Manager-Name: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addMangerName_Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/addRestMangerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Manager-Email: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addMangerEmail_Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/addRestMangerPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Manager-Password: "
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addMangerPassword_Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant-Image"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/reservation_manager_48px"
+                />
+            <Button
+                android:id="@+id/addRestUploadBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload-Photo"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/addRestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/w"
+            android:layout_marginLeft="250dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

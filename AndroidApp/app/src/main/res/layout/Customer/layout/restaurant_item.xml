@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    cardview:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/admin_r_imgC"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.0"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintVertical_bias="0.545">
+            <ImageView
+                android:id="@+id/admin_r_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/restaurant_100px"
+              />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/rest_name"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Restaurant-Name"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.265"
+            cardview:layout_constraintStart_toEndOf="@+id/admin_r_imgC"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/open_sign_24px"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.078"
+            cardview:layout_constraintStart_toEndOf="@+id/admin_r_imgC" />
+        <TextView
+            android:id="@+id/r_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="88dp"
+            android:text="houres"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.077"
+            cardview:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/close_sign_24px"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.298"
+            cardview:layout_constraintStart_toEndOf="@+id/r_open" />
+        <TextView
+            android:id="@+id/r_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="88dp"
+            android:text="houres"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.491"
+            cardview:layout_constraintStart_toEndOf="@+id/imageView3" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rating_48px"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.091"
+            cardview:layout_constraintStart_toEndOf="@+id/admin_r_imgC"
+            cardview:layout_constraintTop_toBottomOf="@+id/imageView2"
+            cardview:layout_constraintVertical_bias="0.466" />
+
+        <TextView
+            android:id="@+id/r_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:text="Rate"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.11"
+            cardview:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="27dp"
+            android:src="@drawable/location_48px"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.337"
+            cardview:layout_constraintStart_toEndOf="@+id/r_rate" />
+
+        <TextView
+            android:id="@+id/rest_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginBottom="36dp"
+            android:text="location"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toEndOf="@+id/imageView5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

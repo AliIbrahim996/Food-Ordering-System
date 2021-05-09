@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="com.google.android.material.navigation.NavigationView">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_R_mag"
+            android:icon="@drawable/restaurant_building_45px"
+        android:title="Restaurant Management"/>
+
+        <item android:id="@+id/nav_c_mag"
+            android:icon="@drawable/customer_45px"
+            android:title="Browse Customers accounts"/>
+
+        <item android:id="@+id/nav_reservation"
+            android:icon="@drawable/reservation_45px"
+            android:title="Check Reservations"/>
+
+        <item android:id="@+id/nav_rates"
+            android:icon="@drawable/rating_45px"
+            android:title="Check Rates"/>
+
+        <item android:id="@+id/nav_orders"
+            android:icon="@drawable/delivery_45px"
+            android:title="Check Delivery orders"/>
+
+        <item android:id="@+id/nav_logOut"
+            android:icon="@drawable/logout_rounded_left_52px"
+            android:title="LogOut"/>
+    </group>
+</menu>

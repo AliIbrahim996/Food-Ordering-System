@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Join our system"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:textAllCaps="false"
+        android:textColor="@color/txt"
+        android:textSize="35dp"
+        android:textStyle="italic|bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/logCustomerBtn"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/log_btn"
+                android:text="Login as Customer"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/regCustomerBtn"
+                android:layout_width="158dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/log_btn"
+                android:src="@drawable/login_background"
+                android:text="Register as Customer"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/logManagerBtn"
+            android:layout_width="140dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/log_btn"
+            android:text="Login as Manager"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="158dp"
+            android:layout_height="22dp"
+            android:background="@drawable/log_btn"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="Register as Manager"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/logAdminBtn"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/log_btn"
+            android:text="Login as Admin"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="158dp"
+            android:layout_height="22dp"
+            android:background="@drawable/log_btn"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="Register as Admin"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/w"
+            android:clickable="true"
+            android:elevation="35dp"
+            android:src="@drawable/google_48px" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/w"
+            android:src="@drawable/facebook_48px"
+            android:clickable="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="center"
+            android:elevation="35dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter_48px"
+            android:clickable="true"
+            android:backgroundTint="@color/w"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:elevation="35dp"/>
+    </LinearLayout>
+        <!--
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    -->
+</LinearLayout>

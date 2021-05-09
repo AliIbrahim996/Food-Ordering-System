@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:orientation="vertical"
+    tools:context=".ResataurantManager.ManageMeals">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/manageMealsRview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backGround"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_expandDirection="up"
+        app:fab_labelStyle="@style/LableStyle"
+        app:fab_labelsPosition="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addMenuFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#00FCF8F8"
+            app:fabSize="mini"
+            app:fab_colorNormal="#FFF"
+            app:fab_icon="@drawable/plus_24px"
+            app:fab_title="Add menu" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addCatFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#00FCF8F8"
+            app:fabSize="mini"
+            app:fab_colorNormal="#FFF"
+            app:fab_icon="@drawable/reserve_24px"
+            app:fab_title="Add category" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addMealFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#00FCF8F8"
+            app:fabSize="mini"
+            app:fab_colorNormal="#FFF"
+            app:fab_icon="@drawable/cutlery_24px"
+            app:fab_title="Add meal" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addMenuFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:icon="@drawable/plus_24px"
+            android:backgroundTint="@color/design_default_color_on_primary"
+            android:text="Add Menu"
+            android:focusable="true"
+            app:backgroundTint="#00FCF8F8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manageMealsRview"
+            app:layout_constraintVertical_bias="0.946" />
+    -->

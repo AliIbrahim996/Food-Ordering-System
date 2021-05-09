@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Hi-Food</string>
+    <string name="logInbackgroundDesc">LogInBackGround</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

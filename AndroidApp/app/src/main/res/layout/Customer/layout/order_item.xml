@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3">
+
+    <TableRow
+        android:background="@color/w">
+        <TextView
+            android:id="@+id/mealNameCol"
+            android:textSize="16dp"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:gravity="left"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/end_color"
+            />
+        <TextView
+            android:id="@+id/mealQtyCol"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_column="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/end_color"
+            />
+        <TextView
+            android:id="@+id/mealUnitPrice"
+            android:textSize="16dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:textColor="@color/end_color"
+            />
+
+    </TableRow>
+
+</TableLayout>

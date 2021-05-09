@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    cardview:cardCornerRadius="4dp"
+    tools:ignore="NamespaceTypo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/m_imgC"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16">
+
+            <ImageView
+                android:id="@+id/m_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/service_bell_48px" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/m_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meal-Name"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.462"
+            cardview:layout_constraintStart_toEndOf="@+id/m_imgC"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintVertical_bias="0.085" />
+
+        <Button
+            android:id="@+id/m_btnMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="128dp"
+            android:background="@drawable/minus_24px"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.316"
+            cardview:layout_constraintStart_toEndOf="@+id/m_quantity" />
+
+        <EditText
+            android:id="@+id/m_quantity"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textAlignment="center"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.152"
+            cardview:layout_constraintStart_toEndOf="@+id/m_btnAdd"
+            cardview:layout_constraintTop_toBottomOf="@+id/m_name"
+            cardview:layout_constraintVertical_bias="0.129" />
+
+        <Button
+            android:id="@+id/m_btnAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="128dp"
+            android:background="@drawable/plus_24px"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.203"
+            cardview:layout_constraintStart_toEndOf="@+id/m_imgC" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/calories_48px"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.108"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/m_imgC"
+            cardview:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/m_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:text="Calories"
+            android:textSize="16dp"
+
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.096"
+            cardview:layout_constraintStart_toEndOf="@+id/imageView8" />
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="110dp"
+            android:src="@drawable/price_48px"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toEndOf="@+id/m_calories"
+            cardview:layout_constraintTop_toBottomOf="@+id/m_btnAdd"
+            cardview:layout_constraintVertical_bias="0.818" />
+
+        <TextView
+            android:id="@+id/m_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:text="Price"
+            android:textSize="16dp"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.156"
+            cardview:layout_constraintStart_toEndOf="@+id/imageView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

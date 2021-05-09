@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:id="@+id/rViewRatingItem"
+    android:clickable="true"
+    android:background="@color/backGround"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/ratingCName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer-Name"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/rItemName"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/rating_96px" />
+        <TextView
+            android:id="@+id/rating_ItemValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rating-value"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/rating_showFeedBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show-feedBack"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="com.google.android.material.navigation.NavigationView">
+
+    <item
+        android:id="@+id/nav_main"
+        android:icon="@drawable/home_24px"
+        android:title="Main Page" />
+
+    <item
+        android:id="@+id/nav_cart"
+        android:title="My orders"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"/>
+
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/admin_settings_male_64px"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_logOut"
+        android:icon="@drawable/logout_rounded_left_52px"
+        android:title="LogOut" />
+</menu>
